@@ -40,3 +40,6 @@ def konversi_suhu(nilai ,dari, ke):
         return (nilai - 273.15) * 9/5 + 32
       elif ke == 'k':
         return nilai
+
+if ke == k and nilai <0
+    return "eror: nilai suhu salah"
