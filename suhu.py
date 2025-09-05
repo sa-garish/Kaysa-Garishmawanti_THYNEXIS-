@@ -17,6 +17,7 @@ def konversi_suhu(nilai ,dari, ke):
 
 # Rumus Fisika Dasar Konverensi Suhu:
 
+# jika dari adalah celcius
     if dari == 'c':
       if ke == 'f':
         return nilai * 9/5 +  32
@@ -25,6 +26,7 @@ def konversi_suhu(nilai ,dari, ke):
       elif ke == 'c':
         return nilai
 
+#jika dari adalah fahrenheit
     if dari == 'f':
       if ke == 'c':
         return (nilai - 32) * 5/9
@@ -33,6 +35,7 @@ def konversi_suhu(nilai ,dari, ke):
       elif ke == 'f':
         return nilai
 
+#jika dari adalah kelvin
     if dari == 'k':
       if ke == 'c':
         return nilai - 273.15
@@ -41,5 +44,6 @@ def konversi_suhu(nilai ,dari, ke):
       elif ke == 'k':
         return nilai
 
-if ke == k and nilai <0
-    return "eror: nilai suhu salah"
+# nilai kelvin tidak boleh negatif
+if ke == k and nilai < 0:
+    return "Eror: nilai suhu salah"
