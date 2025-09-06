@@ -10,10 +10,10 @@ def konversi_suhu(nilai ,dari, ke):
 
 # jika user tidak memasukkan antara C, F, atau K maka akan terjadi error
     if dari not in ["c","f","k"]:
-        return "Error: Format asal tidak sesuai, gunakan antara C, F, atau K"
+      return "Error: Format asal tidak sesuai, gunakan antara C, F, atau K"
 
     if ke not in ["c","f","k"]:
-        return "Error: Format tujuan tidak sesuai, gunakan antara C, F, atau K"
+      return "Error: Format tujuan tidak sesuai, gunakan antara C, F, atau K"
 
 # Rumus Fisika Dasar Konverensi Suhu:
 
@@ -45,5 +45,5 @@ def konversi_suhu(nilai ,dari, ke):
         return nilai
 
 # nilai kelvin tidak boleh negatif
-if ke == k and nilai < 0:
-    return "Eror: nilai suhu salah"
+    if ke == 'k' and nilai < 0:
+        return "Eror: nilai suhu salah"
